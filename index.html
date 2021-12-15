@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТАКСИ «START»</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="a1">
+        <div class="header__content">
+            <section>
+                <div class="admin">
+                    <div class="admin__btn">
+                        <a href="validation-form/avtoriz.php">Я водитель</a>
+                </div>
+            </div>
+            </section>
+            <div class="container">
+                <div class="header__content-inner">
+                    <div class="header__logo">
+                        <img src="img/logo.png" width="230" height="70" alt="логотип" id="a5">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#a1">Главная</a></li>
+                            <li><a href="#a2">Заказать</a></li>
+                            <li><a href="#aa5">Услуги</a></li>
+                            <li><a href="#a3">О нас</a></li>
+                            <li><a href="#a4">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="container">
+            <div class="slider__inner">
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            Доставим вас в любую точку!
+                        </div>
+                        <div class="slider__text">
+                            Сделайте это в удобном для вас формате: оставьте заказ на сайте или позвоните нам по номеру.
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            Только у нас скидки студентам!
+                        </div>
+                        <div class="slider__text">
+                            Предоставьте ваш студенческий билет и получите скидку на поездку 30%
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            70-76
+                        </div>
+                        <div class="slider__text">
+                            Для абонентов любого сотового оператора Республики Беларусь.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+   
+    <section class="form">
+        <div class="container">
+            <div class="form__inner">
+                <div class="form__content">
+                    <div class="form__title-box">
+                        <div class="form__title" id="a2">
+                            Оформить заказ
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <form action="validation-form/check1.php" method="post">
+                            <div class="form__box-inner">
+                                <div class="form__box-left">
+                                    <label>
+                                        Откуда
+                                        <input type="text" class="form-control" name ="from_adres"
+                                        id="from_adres" placeholder="Город, улица, дом">
+                                    </label>
+                                    <label>
+                                        Куда
+                                        <input type="text" class="form-control" name ="to_adres"
+                                        id="to_adres" placeholder="Город, улица, дом">
+                                    </label>
+                                    <label>
+                                        Контактный телефон
+                                        <input type="text" class="form-control" name ="phone"
+                                        id="phone" placeholder="+375(__)___-__-__">
+                                    </label>
+                                  
+                                    <label>
+                                        Указать время
+                                        <input type="text" class="form-control" name ="time"
+                                        id="time" placeholder="Укажите время... (HH:MM)"></input>
+                                    </label>
+                                </div>
+                                <div class="form__box-right">
+                                    <label>
+                                        Примечание
+                                        <textarea class="form-control" name ="comment"
+                                        id="comment" placeholder="Введите текст..."></textarea>
+                                    </label>
+                                    <button type="submit">Заказать</button>
+                                    <div class="about__number-box">
+                                        <img src="img/tel.png" width="60" height="60">
+                                        70-76
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+   
+   
+    <section class="about" >
+        <div class="container" >
+            <div class="about__title" id="a3">
+                О нас
+            </div>
+            <div class="about__text">
+                    Наша цель состоит в том, чтобы помочь нашим клиентам оказаться в нужное время в нужном месте.
+                    В любое время суток мы с комфортом доставим вас куда пожелаете. Приветливые водители всегда выступят
+                    для вас лучшими собеседниками.
+                    Оставьте свой заказ на сайте выше и с вами свяжется наш оператор или позвоните по короткому номеру
+                    70-76.
+            </div>
+    </section>
+    <section class="services" >
+        <div class="container">
+            <div class="services__title" id="aa5">
+                    Услуги
+            </div>
+            <div class="services__text">
+                
+                <ul class = "services__list" type="circle">
+                    <li><span>Любая точка по городу - 5р</span></li>
+                    <li><span>В ночное время - 7р</span></li>
+                    <li><span>Перевозка пассажиров с детьми</span></li>
+                    <li><span>Заказ автомобиля с количеством мест больше 4-х (для перевозки более 4-х человек указывать количество пассажиров в примечаниях)</span></li>
+                    <li><span>Выезд в любой город (стоимость уточнять у оператора)</span></li>
+                    <li><span>Возможность включать свою музыку</span></li>
+                 </ul>
+                
+                 </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__inner">
+                <div class="footer__info">
+                    <div class="footer__title" id="a4">
+                        Контакты
+                    </div>
+                    <ul class="footer__list">
+                        <li><a> +375(33)700-70-76 (МТС)</a></li>
+                        <li><a> +375(44)700-70-76 (А1)</a></li>
+                        <li><a> +375(25)700-70-76 (life:))</a></li>
+                        <li><a>taxi_start@mail.ru</a></li>
+                        <li><a>г. Могилёв, ул. Космонавтов, 21</a></li>
+                    </ul>
+                </div>
+                <div class="footer__map">
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.373481294001!2d30.305598615819527!3d53.90733888010043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d051d01878cd1d%3A0x850f85894a40f0f3!2z0J7QsdGJ0LXQttC40YLQuNC1IOKEliAzINCc0JPQoyDQkC7QkC4g0JrRg9C70LXRiNC-0LLQsCwg0YPQu9C40YbQsCDQmtC-0YHQvNC-0L3QsNCy0YLQvtCyIDIxLCDQnNC-0LPQuNC70ZHQsg!5e0!3m2!1sru!2sby!4v1635451430885!5m2!1sru!2sby" 
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="copy__text">
+                    © by Karolina Khrushcheva, 2021 
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
